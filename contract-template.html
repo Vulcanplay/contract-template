@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{margin: 0;padding: 0;}
+        .content{width: 980px; margin: 0 auto;}
+        .row {display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            border-bottom: 1px solid #979797; }
+        .row-wrap {
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .row.no-lines,.row.no-lines > .col{border :none !important;}
+        .grid .row:last-child{ border-bottom: none;}
+        .col {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -moz-box-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display: block;
+            height: 100%;
+            padding: 10px 0;
+            width: 100%;
+            border-right: 1px solid #979797;
+            box-sizing: border-box;
+            text-indent: 10px;}
+        .col:last-child{ border-right: none;}
+        .col.title{background-color: #bfbfbf; text-align: center; font-size: 16px;text-indent: 0px;}
+        .col-25 {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 25%;
+            -moz-box-flex: 0;
+            -moz-flex: 0 0 25%;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%; }
+        .col-33 {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 33.3333%;
+            -moz-box-flex: 0;
+            -moz-flex: 0 0 33.3333%;
+            -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%; }
+        .col-50 {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 50%;
+            -moz-box-flex: 0;
+            -moz-flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%; }
+        .col-67 {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 66.6666%;
+            -moz-box-flex: 0;
+            -moz-flex: 0 0 66.6666%;
+            -ms-flex: 0 0 66.6666%;
+            flex: 0 0 66.6666%;
+            max-width: 66.6666%; }
+        .col-100 {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 100%;
+            -moz-box-flex: 0;
+            -moz-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%; }
+        h2{ font-size: 28px; text-align: center; margin: 24px 0;}
+        p{ margin: 5px 16px; font-weight: 700; font-size: 14px;}
+        .grid{ border:1px solid #868686; font-size: 14px;overflow: hidden; margin: 16px;}
+        .font-small{font-size: 12px;}
+        .jxs{ line-height: 90px;}
+        .jxs .col{ padding: 40px 0;}
+        .jxs .col:first-child{line-height: 30px; max-width: 50px;}
+        .jxs .col.two-line{line-height: 45px;}
+        .khsm .col.title{line-height: 30px; max-width: 50px; padding: 75px 0;}
+        .khsm .col.content{ height: 270px; text-indent: 0;}
+        .khsm .col.content .vice{ padding: 8px 10px 16px 10px;}
+        .khsm .col.content p{text-indent: 22px; font-weight: 400;}
+        footer{margin-top: -16px;padding: 16px 8px;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h2>机动车延长保修服务合同</h2>
+            <p>本合同与《机动车延长保修服务条款》构成一份完整的合同。</p>
+            <p>合同编号：</p>
+        </header>
+        <div class="grid">
+            <div class="row">
+                <div class="col col-100 title">客户信息</div>
+            </div>
+            <div class="row">
+                <div class="col col-100">姓名/单位：</div>
+            </div>
+            <div class="row">
+                <div class="col col-67">通讯地址：</div>
+                <div class="col col-33">邮编：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">长途区号：</div>
+                <div class="col col-33">电话号码：</div>
+                <div class="col col-33">移动电话：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">证件类别：</div>
+                <div class="col col-33">证件号：</div>
+                <div class="col col-33">电子邮箱：</div>
+            </div>
+            <div class="row">
+                <div class="col col-100 title">机动车登记信息</div>
+            </div>
+            <div class="row">
+                <div class="col col-50">车辆识别码VIN：</div>
+                <div class="col col-50">发动机号：</div>
+            </div>
+            <div class="row">
+                <div class="col col-25">品牌：</div>
+                <div class="col col-25">车型：</div>
+                <div class="col col-25">型号：</div>
+                <div class="col col-25">排量：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">是否涡轮增压：</div>
+                <div class="col col-33">是否四轮驱动：</div>
+                <div class="col col-33">牌照号码：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">新车出厂日期：</div>
+                <div class="col col-33">购车发票日期：</div>
+                <div class="col col-33">车龄：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">车辆购买价格（含税）：</div>
+                <div class="col col-67">新车购车发票抬头：</div>
+            </div>
+            <div class="row">
+                <div class="col col-100 title">保修合同信息</div>
+            </div>
+            <div class="row">
+                <div class="col col-50">原厂保修起始日期：</div>
+                <div class="col col-50">原厂保修终止日期：</div>
+            </div>
+            <div class="row">
+                <div class="col col-25">原厂保修公里数：</div>
+                <div class="col col-50">延长保修合同生效日里程表读数：</div>
+                <div class="col col-25">延长保修合同期限：</div>
+            </div>
+            <div class="row">
+                <div class="col col-100">延长保修合同生效和终止日期：</div>
+            </div>
+            <div class="row">
+                <div class="col col-33">合同项目：</div>
+                <div class="col col-33">赔偿限额：</div>
+                <div class="col col-33">合同价格：</div>
+            </div>
+            <div class="row">
+                <div class="col col-100">车辆是否用于非营业性质<span class="font-small">（驾校教练车辆及个人或企业以陪练作为其用途的车辆除外）：</span></div>
+            </div>
+            <div class="row">
+                <div class="col col-100 title">本延保维修服务由下列4S经销商提供</div>
+            </div>
+            <div class="row jxs">
+                <div class="col title">经<br/>销<br/>商</div>
+                <div class="col two-line">
+                    名称：<br/>
+                    &nbsp;&nbsp;确认签章：
+                </div>
+                <div class="col">地址：</div>
+                <div class="col">服务电话：</div>
+            </div>
+            <div class="row khsm">
+                <div class="col title">客<br/>户<br/>声<br/>明</div>
+                <div class="col content">
+                    <p>本人确认提供给汽车经销商并填写在本合同中的信息是真实准确的。</p>
+                    <div class="vice">本人已经收悉《机动车延长保修服务条款》并仔细阅读相关条款，尤其是保修范围、责任免除、您的责任、条款终止等条款内容，并对汽车经销商就《机动车延长保修服务条款》内容的说明和提示完全理解，没有异议。</div>
+                    <div class="row no-lines row-wrap">
+                        <div class="col col-33">客户签名/盖章：</div>
+                        <div class="col col-67">延保服务商盖章（盖章生效）：</div>
+                        <div class="col col-100">签约日期：</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row no-lines">
+                <div class="col col-50">第一联：客户留存联</div>
+                <div class="col col-50">销售顾问：</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
